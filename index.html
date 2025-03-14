@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plush Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Splide/4.0.7/js/splide.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">SUPER SALE UP TO 40% OFF</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+            </ul>
+            <div class="logo">
+                <img src="Registered_Logo_PNG-02_4435x 1.png" alt="PLUSH Logo">
+            </div>
+            <div class="nav-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <img src="Poster.png" alt="Hero Image">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Stock photos</h1>
+            <p>John Wick is on the run after killing a member of the international assassin's guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</p>
+            <a href="#" class="btn">EXPLORE</a>
+        </div>
+    </section>
+    <!-- <section class="gallery-section">
+        <h2>Similar Results</h2>
+        <div class="image-grid" id="similar-results"></div>
+        <h2>Favorites</h2>
+        <div class="image-grid" id="favorites"></div>
+    </section> -->
+    <section class="gallery-section">
+        <div class="search-bar">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for images...">
+                <button onclick="searchImages()"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <h2>Featured Image</h2>
+        <div class="featured-image-container">
+            <img id="featured-image"  >
+            <p><a id="photographer-link" href="#" target="_blank"><span id="photographer-name"></span></a></p>
+        </div>
+    </section>
+    
+
+    <!-- Similar Images Section (Slider) -->
+    <section class="gallery-section">
+        <h2>Similar Results</h2>
+        <div class="slider-container">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="slider" id="similar-results"></div>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+     <!-- Favorite Images Section -->
+     <section class="favorite-section">
+        <h2>Favorites</h2>
+        <div class="image-grid" id="favorites"></div>
+    </section>
+
+
+    
+</body>
+</html>
+
